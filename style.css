@@ -1,0 +1,159 @@
+.staircase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 50px;
+  background: #f0f0f0;
+  height: 100vh;
+  position: relative;
+}
+
+.step {
+  height: 100px;
+  border-top: 3px solid blue;
+  background: #9ab3d2;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.step-1 {
+  width: 10%;
+}
+.step-2 {
+  width: 20%;
+}
+.step-3 {
+  width: 30%;
+}
+.step-4 {
+  width: 40%;
+}
+.step-5 {
+  width: 50%;
+}
+.step-6 {
+  width: 60%;
+}
+.step-7 {
+  width: 70%;
+}
+.step-8 {
+  width: 80%;
+}
+.step-9 {
+  width: 90%;
+}
+.step-10 {
+  width: 100%;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #e15b64;
+  border-radius: 50%;
+  animation: jump 7s ease infinite;
+  position: absolute;
+  top: 950px;
+  left: 100px;
+}
+
+@keyframes jump {
+  0% {
+    top: 950px;
+    left: 100px;
+  }
+  5% {
+    top: 780px;
+    left: 100px;
+    /* t */
+  }
+  10% {
+    top: 780px;
+    left: 400px;
+    /* u */
+  }
+  15% {
+    top: 650px;
+    left: 400px;
+    /* t */
+  }
+  20% {
+    top: 650px;
+    left: 700px;
+    /* u */
+  }
+  25% {
+    top: 550px;
+    left: 700px;
+    /* t */
+  }
+  30% {
+    top: 550px;
+    left: 1000px;
+    /* u */
+  }
+
+  35% {
+    top: 450px;
+    left: 1000px;
+    /* t */
+  }
+  40% {
+    top: 450px;
+    left: 1250px;
+    /* u */
+  }
+  45% {
+    top: 350px;
+    left: 1250px;
+    /* t */
+  }
+  50% {
+    top: 350px;
+    left: 1500px;
+    /* u */
+  }
+  55% {
+    top: 200px;
+    left: 1500px;
+    /* t */
+  }
+  60% {
+    top: 200px;
+    left: 1800px;
+    /* u */
+  }
+  65% {
+    top: 100px;
+    left: 1800px;
+    /* t */
+  }
+  70% {
+    top: 100px;
+    left: 2100px;
+    /* u */
+  }
+  75% {
+    top: 0;
+    left: 2100px;
+    /* t */
+  }
+  80% {
+    top: 0;
+    left: 2400px;
+    /* u */
+  }
+  85% {
+    top: -100px;
+    left: 2400px;
+    /* t */
+  }
+  90% {
+    top: -100px;
+    left: 2800px;
+    /* t */
+  }
+}
