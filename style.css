@@ -15,7 +15,12 @@
   background: #9ab3d2;
   border-radius: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 ;
+}
+
+.none{
+  border: none;
+  background-color: #f0f0f0;
 }
 
 .step-1 {
@@ -50,110 +55,121 @@
 }
 
 .ball {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: 5px solid #e15b64;
   border-radius: 50%;
-  animation: jump 7s ease infinite;
+  animation: jump 6s ease infinite;
   position: absolute;
-  top: 950px;
-  left: 100px;
+  top: 700px;
+  left: 90px;
 }
 
 @keyframes jump {
   0% {
-    top: 950px;
-    left: 100px;
+    top: 700px;
+    left: 90px;
   }
   5% {
-    top: 780px;
-    left: 100px;
+    top: 500px;
+    left: 90px;
     /* t */
   }
   10% {
-    top: 780px;
-    left: 400px;
+    top: 500px;
+    left: 200px;
     /* u */
   }
   15% {
-    top: 650px;
-    left: 400px;
-    /* t */
+    top: 615px;
+    left: 200px;
+    /* p */
   }
   20% {
-    top: 650px;
-    left: 700px;
-    /* u */
-  }
-  25% {
-    top: 550px;
-    left: 700px;
+    top: 400px;
+    left: 200px;
     /* t */
   }
-  30% {
-    top: 550px;
-    left: 1000px;
+  25% {
+    top: 400px;
+    left: 350px;
     /* u */
   }
-
+  30% {
+    top: 530px;
+    left: 350px;
+    /* p */
+  }
   35% {
-    top: 450px;
-    left: 1000px;
+    top: 400px;
+    left: 350px;
     /* t */
   }
   40% {
-    top: 450px;
-    left: 1250px;
+    top: 400px;
+    left: 490px;
     /* u */
   }
   45% {
-    top: 350px;
-    left: 1250px;
-    /* t */
+    top: 450px;
+    left: 490px;
+    /* p */
   }
   50% {
-    top: 350px;
-    left: 1500px;
-    /* u */
-  }
-  55% {
-    top: 200px;
-    left: 1500px;
+    top: 280px;
+    left: 490px;
     /* t */
   }
-  60% {
-    top: 200px;
-    left: 1800px;
+  55% {
+    top: 280px;
+    left: 600px;
     /* u */
   }
+  60% {
+    top: 370px;
+    left: 600px;
+    /* p */
+  }
   65% {
-    top: 100px;
-    left: 1800px;
+    top: 250px;
+    left: 600px;
     /* t */
   }
   70% {
-    top: 100px;
-    left: 2100px;
-    /* u */
+    top: 200px;
+    left: 750px;
+    /* t */
   }
   75% {
-    top: 0;
-    left: 2100px;
-    /* t */
+    top: 290px;
+    left: 750px;
+    /* p */
   }
   80% {
-    top: 0;
-    left: 2400px;
-    /* u */
+    top: 140px;
+    left: 750px;
+    /* t */
   }
   85% {
-    top: -100px;
-    left: 2400px;
-    /* t */
+    top: 140px;
+    left: 900px;
+    /* u */
   }
   90% {
-    top: -100px;
-    left: 2800px;
+    top: 210px;
+    left: 900px;
+    /* p */
+  }
+  95% {
+    top: 60px;
+    left: 900px;
     /* t */
   }
+  100% {
+    top: 100px;
+    left: 1000px;
+    /* u */
+  }
+  
+  
 }
